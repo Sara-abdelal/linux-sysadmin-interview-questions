@@ -8,6 +8,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 
   1. [Contributors](#contributors)
   1. [General Questions](#general)
+  1. [General Questions Answers](#generalanswer)
   1. [Simple Linux Questions](#simple)
   1. [Medium Linux Questions](#medium)
   1. [Hard Linux Questions](#hard)
@@ -18,6 +19,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
   1. [Fun Questions](#fun)
   1. [Demo Time](#demo)
   1. [Other Great References](#references)
+  1. [General Questions Answers](#generalanswer)
 
 
 #### [[⬆]](#toc) <a name='contributors'>Contributors:</a>
