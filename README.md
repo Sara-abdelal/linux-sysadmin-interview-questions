@@ -7,8 +7,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 ## <a name='toc'>Table of Contents</a>
 
   1. [Contributors](#contributors)
-  1. [General Questions](#general)
-  1. [General Questions Answers](#generalanswer)
+  1. [General Questions](#general) [Answers](#answers)
   1. [Simple Linux Questions](#simple)
   1. [Medium Linux Questions](#medium)
   1. [Hard Linux Questions](#hard)
@@ -19,7 +18,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
   1. [Fun Questions](#fun)
   1. [Demo Time](#demo)
   1. [Other Great References](#references)
-  1. [General Questions Answers](#generalanswer)
+  
 
 
 #### [[⬆]](#toc) <a name='contributors'>Contributors:</a>
@@ -53,6 +52,212 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is a level 0 backup? What is an incremental backup?
 * Describe the general file system hierarchy of a Linux system.
 * Which difference have between public and private SSH key?
+
+#### [[⬆]](#toc) <a name='answers'>General Questions Answers:</a>
+* What did you learn yesterday/this week?
+>>github new account sign up, forking repositories , know more about github, terraform aws , hands on aws solution architect 
+
+* Talk about your preferred development/administration environment. (OS, Editor, Browsers, Tools etc.)
+>> Admin environment Linux or unix , but preferrably Linux (redhat or ubuntu,..) 
+Browsers : chrome as it is mostly compatitble with most webpages and apps (simple , secure , platform independant , leading the market , Extensions and Add-ons , gained Google trust)
+
+
+* Tell me about the last major Linux project you finished.
+>> 1-Administrating AWS webservers from command line bu installing apached and make simple webserver 
+>> 2-Launching a fault tolerant Word Press Site on aws environment using s3 to server and save source code using crobjob .
+>> 3-Using aws cloudformation to serve any atatched media in wordpress articles to improve perfomance of launching images by leveraging aws backbone network to edge locations .
+>> 4-building a serverless website using aws lambda and API Gateway
+
+* Tell me about the biggest mistake you've made in [some recent time period and how you would do it differently today. What did you learn from this experience?
+>>biggest mistake i've made that i delayed studying AWS and postponed it but i made a good decision in studing it from zero till i get Solution architect certificate and found it more and more exciting .
+i Learned that there is more yet to come and looking forward for my sysops admin certificate .
+
+* Why we must choose you?
+>> AWS solution architect certified 
+>> Was working with Elite customers @ DellEMC and managed to solve customer production issues live on production servers.
+>> contacting Elite customer live via phone , email and webex 
+>> Linux administrator certificate 
+>> Vmware certified 
+>> problem solver 
+>> good presentation skills 
+>> Passionate 
+>> Strong communication skills (written, verbal, nonverbal)
+>> Friendly
+>> Enthusiastic
+
+* What is URL ?
+Uniform Resource locator 
+
+* What function does DNS play on a network?
+>> Whomeever used the internet ,definitly used DNS , IT is used to convert human friendly domain name as www.google.com into and  internet protocol (IP) as 1.2.3.4
+
+Domain Name system is the internet Yelloe pages .
+DNS workes as a Phone book converting Domain name and resolve it to ip address "computers can understand"
+
+ipv4 :32 bit (4 billion add) and ipv6 is 128 bits (340 undecillion add )
+
+ipv6 created to solve depletion issue as IOT and all other devices consumed ipv4 to get connected to internet  as it was invented in pre internet days and wouldn't predict the great things connected to  internet .  
+
+Ip addresses are used by computers to identify each others on the internet  , commonly come in ipv4 and ipv6
+
+ipv4 is the past while ipv6 is the futur.
+https://www.youtube.com/watch?v=Rck3BALhI5c&index=203&list=PLQMVnqe4XbictUtFZK1-gBYvyUzTWJnOk&t=0s
+
+* What is HTTP?
+>> HTTP : Hyper Text Transfer Protocol
+it is about communication between Web clients and servers 
+Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses
+
+The World Wide Web is about communication between web clients and web servers.
+
+Clients are often browsers (Chrome, Edge, Safari), but they can be any type of program or device.
+
+Servers are most often computers in the cloud.
+HTTP Request / Response
+
+Communication between clients and servers is done by requests and responses:
+
+1-A client (a browser) sends an HTTP request to the web
+2-An web server receives the request
+3-The server runs an application to process the request
+4-The server returns an HTTP response (output) to the browser
+5-The client (the browser) receives the response
+https://www.youtube.com/watch?v=MBwdO30YsGs
+
+* What is an HTTP proxy and how does it work?
+>>A HTTP proxy speaks the HTTP protocol, it's especially made for HTTP connections but can be abused for other protocols as well (which is kinda standard already)
+
+The browser (CLIENT) sends GET http://SERVER/path HTTP/1.1 to the PROXY
+Now the PROXY will forward the actual request to the SERVER.
+The SERVER will only see the PROXY as connection and answer to the PROXY just like to a CLIENT.
+The PROXY receives the response and forwards it back to the CLIENT.
+
+It is a transparent process and nearly like directly communicating with a server so it's just a tiny overhead for the browser to implement a HTTP proxy.
+There are some additional headers that can be sent to identify the client, reveal that he's using a proxy.
+Proxies sometimes change/add content within the data stream for various purposes.
+Some proxies for example include your real IP in a special HTTP HEADER which can be logged server-side, or intercepted in their scripts.
+
+CLIENT <---> PROXY <---> SERVER
+
+Communication between two computers connected through a third computer acting as a proxy. Bob does not know to whom the information is going, which is why proxies can be used to protect privacy.
+
+* Describe briefly how HTTPS works.
+https is used if you want to provide your customers with safe, secure environment environment on your website by getting web security . so to purchase and SSL certificate  that can be purchased from a web services company who is a certificate authority it :
+1- check refrences 
+2- assures identity
+3- encrypt any data flows to or from my website keepting it secure from outsiders security (who want to steal customer's info and credit cards numbers)
+
+for a secure website (after regsitering a domain and have a website designed and hosted ready to start selling online items) , you purchase an SSL certificate , this certificate authenticates a business's online identity and creates a unique scrambled  connection to provide users (online shoppers) with a safe , secure environement .if customers feels safe they'll feel more comfortable doing business with me on the web 
+
+SSL: Secure Socket layer
+
+according to SSL certificate my website purchased , client's browser may display a small icons shape  like a lock , a thumbs up , a green browser bar or some other reassuring symbol when security is in place , once 2 computers agreed on method to use , data will start flow back and forth between them , when data leaves one computer it's scrambled using agreed upon method and descrambled when it arrives at the other computer 
+
+https://www.youtube.com/watch?v=SJJmoDZ3il8
+
+* What is SMTP? Give the basic scenario of how a mail message is delivered via SMTP.
+>> Simple Mail Transfer Protocol , while POP and IMAP are protocols that allow you to retrieve email from a  mail server ,SMPT is the protocol that allows you to send email to Mail server
+
+when you send an email using free email providers lile gmail or yahoo or hotmail , you email address uses their domain name "gmail.com , yahoo.com and hotmail.com" and in turn they allow you to use  their email servers
+
+however if you use local mail client like outlook , apple mail and Mozilla thunderbird , you will need to enter you email providres incoming and outgoing mail server settings when you setup your client .
+Incoming server setting (POP , IMAP)tells the email client where it can retrieve your mail from 
+Outgoing mail server settings (SMTP) tells the email client where it can send your email to .
+
+Send email process and role of SMTP servers play in it ?
+ex : Maggie her mail is maggie@yahoo.com she  is using Yahoo as her email sevrice provider, she likes to use outlook as her email client for wrting , reading and sending emails on it .
+
+So , to make sure outlook can communicate wit yahoo mail server she entered yahoo email server settings when she configured her MS Outlook.
+
+Maggie writes an email to her friend rob using MS Outlook;
+To: rob@gmail.com
+From : Maggie@yahoo.com
+Hi rob,
+welcome back from you vacation
+thanks ,
+when she clicks SEND , Ms outlook sends Rob's email add and her email add and the email body to Yahoo SMTP server.
+
+When yahoo mail server recieves this , it breaks Rob's email add into 2 parts the recipient ID (Rob) and the domian name after @ sign (@gmail.com) , then Yahoo SMTP mail server then goes out to the internet and throught a series of server conversations ,it locates the SMTP mail server of gmail .
+
+Then Yahoo SMTP server Passes Maggie's email to Gmail SMTP  server .
+
+Maggies email will remains @ Gmail SMTP server till Rob logs into his gmail account and retrieve the email.
+
+So, SMTP is the protocol that allows you to send emails from an email client  to mail server
+  
+https://www.youtube.com/watch?v=j7kMZD81hec
+
+* What is RAID? What is RAID0, RAID1, RAID5, RAID10?
+>>Redundant Array of Inexpensive (independant)	Disks ; means using multiple disk drives to achieve better performance and/or better reliability
+
+R0 : all about speed nothing for reliability excepts actually make it works , involves  2 drives or more and striping the data across all of the drives this mean u get to keep all ur capcity and in theory with 2 drives u will have double ur read and write performance  but in event of one drive failed , u will lose all of the data stored on both drives ,it is ideal if your are doing very frequent bkups or going for most extreme performance possible as running multiple SSD's.
+
+R1 : All about reliability , the capacity of 1 of ur drives , the performance of 1 of your drives but u get the redundancy of 2 drives means if 1 of 2 drives failed , all of the data will still there on the other one .
+you are still get full perfomance of the drives but the more drives u add to Raid 1 , you will always get half the capacity that u would have 
+advantage , it is extremely safe so most inportnt documents to be raid 1 array .
+
+
+R10 : get all good about R0 and what good about R1 into same thing , u take 4 drives u striping  disk 0 and disk 2 and will be mirrored with 1 and 3.So u will get double performance of an individual disk and double capacity of an individual disk but u can lose up to 2 drives in R10 array without losing any data .
+Greate where performance is needed , space is needed .
+
+Note : Raid is not a susptitutional to Backups .on Raid you still suspectible to virus or accidental deletion or other human error so need to make sure you make regular backups
+
+R5 & R6 : is used for more professional applications 
+
+R5 : needs atleast 3 drives to operate 
+
+if u have 6 drives , u have the capacity of 5 drives as there is 1 reserved  to rebuild the data on the array incase a drive failure 
+
+it stored data on multiple drives , u can read from it extremely quickly .However writing on R5 will be much slower (without complex hardware RAID controller) and rebuilding the array from 1 drive failure can be time consuming .
+
+R6 : is a more durable version of R5 , it can survive up to 2 drives failures  and still be completely rebuild , u can have at least 4 drives  and much slower to write than R5 and wzout complex h/w RAID controller u can't really run R6
+https://www.youtube.com/watch?v=1P8ZecG9iOI
+https://www.youtube.com/watch?v=eE7Bfw9lFfs
+
+* What is a level 0 backup? What is an incremental backup?
+The only difference between a level 0 incremental backup and a full backup is that a full backup is never included in an incremental strategy.
+Full and level zero backups copy all blocks that have data (and more if you're doing image copies), so they are both "full" in that sense.
+But if you want to do cumulative or differential backups, the starting point for those must be a level zero incremental backup.
+
+* Describe the general file system hierarchy of a Linux system.
+/ >> Root directory
+/bin >> Binaries  and executable programs 
+/etc >> system files configurations
+/home >> user home directories
+/opt >> application software package 
+/tmp >>temproray files ,  typically cleared on reboot.
+/usr >> user utilities and applications
+/var >>	Variable data, most notably log files.
+/boot  >>static files of boot loader
+/dev >> devices files
+/lib >> shared libraries
+/mnt >> mounted filesystem
+
+https://www.linuxtrainingacademy.com/linux-directory-structure-and-file-system-hierarchy/
+
+https://www.linuxtrainingacademy.com/linux-ip-command-networking-cheat-sheet/
+
+https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/
+
+Actually our computers are forgrtfull and never remebred where we put staff like imp documents or my os or games ...
+So FS is doen to keep track of where all my staff is . All types of systems in common divided up your HD SSD or flash drives into small units that stores data and have some kind of way to remebering what data is in each unit spo to find it later on .
+FAT (File Allocation Table) used by Windows till windows xp then Fat32 comes with windows 98 but still have same issue of unused spaces on Hard left "SLACK" then NTFS "nEW technology FS"
+used some space mgmt tricks to make use of space more effiently than FAT, SO can support massive partitions of hundreds of TB and can prevent DL , native file compression and security .
+
+Note Fat32 is still used on USB flash drives to maintain compatibility with old versions of Windows and other OS as linux .
+
+there is EXFAT then appeared.
+
+
+https://www.youtube.com/watch?v=BV0-EPUYuQc&list=PLQMVnqe4XbictUtFZK1-gBYvyUzTWJnOk&index=208
+
+
+* Which difference have between public and private SSH key?
+SSH, or secure shell, is a secure protocol and the most common way of safely administering remote servers. Using a number of encryption technologies, SSH provides a mechanism for establishing a cryptographically secured connection between two parties, authenticating each side to the other, and passing commands and output back and forth.
+Think of a public key as being the lock. It’s not actually a key, it’s a padlock you can make lots of copies of and distribute wherever you want. For example, if you want to put your ‘padlock’ on an ssh account on another machine, you would copy it to ‘authorized_keys’ in the ~/.ssh folder. You’ve setup the padlock.
+Think of a private key as being the actual key. This is what you use to open the padlock that is stored on the other machine. Just like a regular key you keep it secret, safe, and out of the wrong hands.
+http://blakesmith.me/2010/02/08/understanding-public-key-private-key-concepts.html
+
 
 
 #### [[⬆]](#toc) <a name='simple'>Simple Linux Questions:</a>
